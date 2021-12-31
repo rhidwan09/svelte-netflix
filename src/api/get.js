@@ -6,7 +6,6 @@ export default async function Get(uri) {
 	});
 
 	let result = await res.json();
-	console.log('result', result);
 
 	if (result) {
 		let response = {

@@ -1,8 +1,8 @@
 <script context="module">
-	export async function load({ page, fetch, session, context }) {
+	export async function load({ params }) {
 		return {
 			props: {
-				id: page.params.id
+				id: params.id
 			}
 		};
 	}

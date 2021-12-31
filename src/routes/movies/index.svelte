@@ -19,14 +19,12 @@
 
 	onMount(async () => {
 		animated = await GetByGenres('discover/movie', 16);
-		console.log('animated', animated);
 		adventure = await GetByGenres('discover/movie', 12);
 		superHeroes = await GetByGenres('discover/movie', 14);
 	});
 
 	$: console.log(adventure, 'by genres');
 	function handleScrollSwiper(id, i, clientWidth) {
-		console.log('i', i);
 		selectedPoint = i;
 		if (clientWidth > 600)
 			return document.getElementById(id).scrollTo({ left: i * 1100, behavior: 'smooth' });
@@ -34,7 +32,6 @@
 			return document.getElementById(id).scrollTo({ left: i * 300, behavior: 'smooth' });
 	}
 	function handleScrollBar(id, type, clientWidth) {
-		console.log(type);
 		if (clientWidth > 600)
 			return document.getElementById(id).scrollTo({ left: 1500, behavior: 'smooth' });
 		if (clientWidth < 600)

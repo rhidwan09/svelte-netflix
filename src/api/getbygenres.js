@@ -14,7 +14,6 @@ export default async function GetByGenres(uri, id) {
 	let nameGenres = await GetGenresJson.body.genres.filter((item) => {
 		return item.id === id;
 	});
-	console.log('nameGenres', nameGenres[0].name);
 
 	let byGenres = {
 		data: resultGenres.results,

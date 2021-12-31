@@ -6,7 +6,6 @@
 	import { getRawBody } from '@sveltejs/kit/node';
 	let isSubmenu = false;
 	let genres = Get('genre/movie/list');
-	console.log('genres', genres);
 </script>
 
 <style>
