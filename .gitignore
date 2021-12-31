@@ -1,5 +1,9 @@
 /node_modules/
 /public/build/
 /public/bundle/
+/.svelte-kit
+/package
+build
+functions
 
 .DS_Store
