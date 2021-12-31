@@ -3,7 +3,7 @@
 </script>
 
 <script>
-	import Button from '$lib/Components/Common/';
+	import Button from '$lib/Components/Common/Button.svelte';
 	let bg_desktop = '/bg-list-movie.png';
 	let bg_mobile = 'bg-list-movie-mobile.png';
 	let clientWidth = 0;
